@@ -1,0 +1,15 @@
+<ion-content>
+  <div class="login-content" padding>
+    <div class="login-logo">
+      <img class="logo-image" src="assets/rgb.png" alt="Logo TourGuide">
+      <div class="logo-label">TourGuide</div>
+    </div>
+    <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+      <div class="login-form" padding>
+        <ion-input ngModel type="email" name="email" placeholder="Email"></ion-input>
+        <ion-input ngModel type="password" name="password" placeholder="Password"></ion-input>
+      </div>
+      <ion-button type="submit" expand="block" color="success">Login</ion-button>
+    </form>
+  </div>
+</ion-content>
